@@ -1,0 +1,10 @@
+html{
+    background-color: rgb(51, 51, 56);
+}
+.titulo{
+    text-align: center;
+    text-transform:initial;
+}
+header{
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
