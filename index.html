@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,49 @@
     <link rel=stylesheet href="estilos/estilos.css">
     <title>LHDA</title>
 </head>
-<header>
-    <h2 class="titulo">Este es el título </h2>
-    <script src="script/index.js">
-    </script>
-</header>
-<main>
-</main>
 
 <body>
+    <!--Barra de navegación :3-->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#">Logo</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span class="toggle-icon"></span>
+            </div>
+        </div>
+    </nav>
+<!--SOLICITUD DE CRÉDITO-->
+    <div class="container">
+        <h1>Solicitud de Crédito</h1>
+        <form id="credit-form">
+            <label for="nombreusuario">Usuario:</label>
+            <input type="text" id="nombreusuario" required>
+
+            <label for="montoasolicitar">Monto a solicitar:</label>
+            <input type="number" id="montoasolicitar" required>
+
+            <label for="terminos">Acepta nuestros términos de servicio:</label>
+            <select id="terminos" required>
+                <option value="">Selecciona una opción</option>
+                <option value="ACEPTO">ACEPTO</option>
+                <option value="NO ACEPTO">NO ACEPTO</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado-container">
+            <!-- Aqui se mostrarán los resultados -->
+        </div>
+    </div>
+    <script src="/script/index.js"></script>
 </body>
 
 </html>
